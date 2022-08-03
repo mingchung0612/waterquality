@@ -8,8 +8,8 @@ import numpy as np
 from streamlit import components
 
 # Load model
-load_model = tf.keras.models.load_model("D:/PyCharm/water_streamlit/Water.h5")
-df = pd.read_csv("D:/PyCharm/water_streamlit/latest_water1.csv")
+load_model = tf.keras.models.load_model("Water.h5")
+df = pd.read_csv("latest_water1.csv")
 X = df.drop(['is_safe'], 1)
 
 def main():
